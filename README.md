@@ -6,6 +6,6 @@
   2.2微服务提供者：p_2_1_eurekaClient 注册服务到服务端
   2.3微服务使用者：p_2_2_eurekaClient_order 使用注册到服务端的微服务
     熔断机制保证系统不会出错等
-  
+3.网关配置：http://127.0.0.1:8087/app-order/order3/2?token=  
   
   
