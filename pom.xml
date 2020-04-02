@@ -55,5 +55,8 @@
 	
   <modules>
 	<module>p_1_helloSpringboot</module>
+	<module>p_2_0_eurekaServer</module>
+    <module>p_2_1_eurekaClient</module>
+    <module>p_2_2_eurekaClient_order</module>
   </modules>
 </project>

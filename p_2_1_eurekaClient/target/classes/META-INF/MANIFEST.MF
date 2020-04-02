@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Implementation-Title: p_2_1_eurekaClient
+Implementation-Version: 0.0.1-SNAPSHOT
+Build-Jdk-Spec: 1.8
+Created-By: Maven Integration for Eclipse
+
