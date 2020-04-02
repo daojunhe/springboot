@@ -73,5 +73,9 @@
     <module>p_2_1_eurekaClient</module>
     <module>p_2_2_eurekaClient_order</module>
     <module>p_3_0_microsrvice-api-gateway</module>
+    <module>p_4_0_configServer</module>
+    <module>p_4_1_configClient</module>
+    <module>p_4_2_config_gateway</module>
+
   </modules>
 </project>
