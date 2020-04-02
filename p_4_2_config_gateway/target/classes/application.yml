@@ -38,8 +38,8 @@ eureka:
 #      service-id: app-order #指定Eureka注册中心的服务id
 
 #上面或者下面配置
-zuul:
-  ignored-services: app-item #忽略服务
+#zuul:
+#  ignored-services: app-item #忽略服务
 #  ignored-services: '*' #忽略所有服务，只能用代理的的服务
 #  routes: #定义服务转发规则
 #    app-order: /app-order/**
