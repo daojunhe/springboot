@@ -14,7 +14,21 @@
   
   <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<spring-cloud.version>Hoxton.SR3</spring-cloud.version>
 	</properties>
+	
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	
   <dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -58,5 +72,6 @@
 	<module>p_2_0_eurekaServer</module>
     <module>p_2_1_eurekaClient</module>
     <module>p_2_2_eurekaClient_order</module>
+    <module>p_3_0_microsrvice-api-gateway</module>
   </modules>
 </project>
