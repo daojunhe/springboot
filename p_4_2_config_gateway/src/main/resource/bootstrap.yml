@@ -3,12 +3,12 @@ server:
 spring:
   application:
     name: app-zuul-gateway #指定服务名
-#配置服务器 读取service-zuul-dev文件；
+#配置服务器 读取仓库中的service-zuul-dev文件；
   cloud:
     config:
       name: service-zuul #对应配置中心的应用名称，默认是本应用名，即spring.application.name,该名称要和git中的配置一致
       #uri: http://127.0.0.1:7788/
-      profile: dev11 #对应配置服务中的{profile}
+      profile: dev #对应配置服务中的{profile}
       label: master #对应的分支
       discovery:
         enabled: true #启用发现服务功能
@@ -28,15 +28,14 @@ eureka:
       instance-id: ${spring.application.name}###${server.port} #指定实例id
  #统一配置管理zuul         
 #zuul:
-##  ignored-services: app-item #忽略服务
+#  #ignored-services: '*' #忽略服务
 #  routes: #定义服务转发规则#    item-service: #item-service这个名字是任意写的
 #      path: /item-service/** #匹配item-service的请求app-item服务
 #      #url: http://127.0.0.1:8081 #真正的微服务地址
 #      service-id: app-item
-#    order-service: #名字尽量和业务系统相关
-#      path: /order-service/** #匹配order-service的请求app-order服务
-#      service-id: app-order #指定Eureka注册中心的服务id
-
+#ribbon:
+#  eureka:
+#    enabled: true #false  禁止Ribbon使用Eureka 
 #上面或者下面配置
 #zuul:
 #  ignored-services: app-item #忽略服务
