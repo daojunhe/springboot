@@ -76,6 +76,8 @@
     <module>p_4_0_configServer</module>
     <module>p_4_1_configClient</module>
     <module>p_4_2_config_gateway</module>
-
+    <module>p_5_0_zookeeperServer</module>
+    <module>p_5_1_zookeeperClient_item</module>
+    <module>p_5_2_zookeeperClient_order</module>
   </modules>
 </project>
